@@ -37,13 +37,18 @@
         <meta property="og:site_name" content="Tradecraft Printers"/>
         <!-- Template Main CSS File -->
 
-        @vite(['resources/css/style.css', 
+       <!--  @vite(['resources/css/style.css', 
                 'resources/css/variables.css',
                 'resources/remixicon/remixicon.css',
                 'resources/boxicons/css/boxicons.min.css',
-                'resources/swiper/swiper-bundle.min.css',
-                'resources/swiper/swiper-bundle.min.js'
-            ])
+            ]) -->
+    <link rel="stylesheet" href="{{ asset('build/assets/aapp-DHBATib1.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/assets/remixicon-bMSTyo6R.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/assets/style-CrzLyF-k.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('build/assets/variables-DBBMD_mi.css') }}">
+    <script src="{{ asset('build/assets/app-7q1JrtwP.js') }}"></script>
+    <script src="{{ asset('build/assets/app-l0sNRNKZ.js') }}"></script>
 
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">

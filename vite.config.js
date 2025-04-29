@@ -8,10 +8,8 @@ export default defineConfig({
                 'resources/css/app.css',
                 'resources/js/app.js',
                 'resources/css/style.css',
-                'resources/css/variable.css',
+                'resources/css/variables.css',
                 'resources/remixicon/remixicon.css',
-                'resources/swiper/swiper-bundle.min.css',
-                'resources/swiper/swiper-bundle.min.js'
             ],
             refresh: true,
         }),
