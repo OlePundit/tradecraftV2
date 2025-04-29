@@ -19,12 +19,10 @@
       
         <!-- Vendor CSS Files -->
         <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-        <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+       
         <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-        <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-        <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+      
         <meta name="twitter:title" content="Tradecraft Printers">
         <meta name="twitter:description" content="<p>#1 printing, photocopying, binding and lamination shop in Kenya</p>">
         <meta name="twitter:image" content="https://tradecraft.co.ke/assets/img/twitter-card.png">
@@ -39,7 +37,13 @@
         <meta property="og:site_name" content="Tradecraft Printers"/>
         <!-- Template Main CSS File -->
 
-        @vite(['resources/css/style.css', 'resources/css/variables.css','resources/remixicon/remixicon.css','resources/boxicons/css/boxicons.min.css'])
+        @vite(['resources/css/style.css', 
+                'resources/css/variables.css',
+                'resources/remixicon/remixicon.css',
+                'resources/boxicons/css/boxicons.min.css',
+                'resources/swiper/swiper-bundle.min.css',
+                'resources/swiper/swiper-bundle.min.js'
+            ])
 
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -144,7 +148,7 @@
               </div>
       
               <div class="row justify-content-center gy-5">
-                <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                <div class="col-xl-4 col-md-6 mb-5" data-aos="zoom-in" data-aos-delay="200">
                   <div class="service-item">
                     <div class="img">
                       <img src="storage/img/services-8.webp" class="img-fluid" alt="service-img">
@@ -162,7 +166,7 @@
       
       
       
-                <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                <div class="col-xl-4 col-md-6 mb-5" data-aos="zoom-in" data-aos-delay="300">
                   <div class="service-item">
                     <div class="img">
                       <img src="storage/img/services-2.webp" class="img-fluid" alt="service-img">
@@ -181,7 +185,7 @@
                   </div>
                 </div><!-- End Service Item -->
       
-                <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                <div class="col-xl-4 col-md-6 mb-5" data-aos="zoom-in" data-aos-delay="400">
                   <div class="service-item">
                     <div class="img">
                       <img src="storage/img/services-7.webp" class="img-fluid" alt="service-img">
@@ -198,7 +202,7 @@
                   </div>
                 </div><!-- End Service Item -->
       
-                <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                <div class="col-xl-4 col-md-6 mb-5" data-aos="zoom-in" data-aos-delay="400">
                   <div class="service-item">
                     <div class="img">
                       <img src="storage/img/services-3.webp" class="img-fluid" alt="service-img">
@@ -215,7 +219,7 @@
                   </div>
                 </div><!-- End Service Item -->
       
-                <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
+                <div class="col-xl-4 col-md-6 mb-5" data-aos="zoom-in" data-aos-delay="500">
                   <div class="service-item">
                     <div class="img">
                       <img src="storage/img/services-4.webp" class="img-fluid" alt="service-img">
@@ -231,7 +235,7 @@
                   </div>
                 </div><!-- End Service Item -->
       
-                <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
+                <div class="col-xl-4 col-md-6 mb-5" data-aos="zoom-in" data-aos-delay="600">
                   <div class="service-item">
                     <div class="img">
                       <img src="storage/img/services-5.webp" class="img-fluid" alt="service-img">
@@ -246,7 +250,7 @@
                     </div>
                   </div>
                 </div><!-- End Service Item -->
-                <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                <div class="col-xl-4 col-md-6 mb-5" data-aos="zoom-in" data-aos-delay="200">
                   <div class="service-item">
                     <div class="img">
                       <img src="storage/img/services-1.webp" class="img-fluid" alt="service-img">
@@ -262,7 +266,7 @@
                   </div>
                 </div><!-- End Service Item -->
       
-                <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
+                <div class="col-xl-4 col-md-6 mb-5" data-aos="zoom-in" data-aos-delay="700">
                   <div class="service-item">
                     <div class="img">
                       <img src="storage/img/services-6.webp" class="img-fluid" alt="service-img">
@@ -610,8 +614,8 @@
             <div class="container" data-aos="fade-up">
       
               <div class="row no-gutters">
-                <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" style="background-image: url('{{ asset('storage/img/counts-img.jpg') }}'); background-size: cover; background-position: center;" data-aos="fade-right" data-aos-delay="100"></div>
-                <div class="col-xl-7 ps-4 ps-lg-5 pe-4 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
+                <div class="image col-xl-4 p-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" style="background-image: url('{{ asset('storage/img/counts-img.jpg') }}'); background-size: cover; background-position: center;" data-aos="fade-right" data-aos-delay="100"></div>
+                <div class="col-xl-7 ml-5 ps-4 ps-lg-5 pe-4 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
                   <div class="content d-flex flex-column justify-content-center">
                     <h3>Our numbers speak for themsleves!</h3>
                     <p>
@@ -661,7 +665,7 @@
           <section id="testimonials" class="testimonials" style="background-image: url('{{ asset('storage/img/testimonials-bg.jpg') }}'); background-size: cover; background-position: center;">
             <div class="container" data-aos="zoom-in">
       
-              <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+              <div class="testimonials-slider swiper1" data-aos="fade-up" data-aos-delay="100">
                 <div class="swiper-wrapper">
       
                   <div class="swiper-slide">
@@ -732,7 +736,7 @@
                     </div>
                   </div><!-- End testimonial item -->
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination1"></div>
               </div>
       
             </div>
@@ -881,14 +885,80 @@
         <!-- Vendor JS Files -->
         <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
         <script src="assets/vendor/aos/aos.js"></script>
-        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
         <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-        <script src="assets/vendor/php-email-form/validate.js"></script>
       
         <!-- Template Main JS File -->
         <script src="assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script>
+          var swiper = new Swiper('.swiper', {
+              // Optional parameters
+              // If we need pagination
+              pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+              },
+
+              // Navigation arrows
+              navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+              },
+
+              // Adding space between slides
+              spaceBetween: 0,
+
+              // Adding slide visibility check
+              watchSlidesVisibility: true,
+
+              // Adjusting slide transition
+              speed: 600,
+
+              autoplay: {
+                  delay: 5000,
+                  disableOnInteraction: true,
+              },
+                // Responsive breakpoints
+              breakpoints: {
+                // when window width is >= 320px
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+                },
+                // when window width is >= 640px
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                // when window width is >= 1024px
+                1024: {
+                  slidesPerView: 7,
+                  spaceBetween: 30,
+                },
+              }
+          });
+          var swiper1 = new Swiper('.swiper1', {
+              pagination: {
+                  el: '.swiper-pagination1',
+                  clickable: true,
+              },
+
+              navigation: {
+                  nextEl: '.swiper-button-next1',
+                  prevEl: '.swiper-button-prev1',
+              },
+
+              autoplay: {
+                  delay: 6000,
+                  disableOnInteraction: true,
+              },
+
+              speed: 600,
+          });
+
+      </script>
         <script>
           $(document).ready(function () {
               $('#exampleModal').modal();

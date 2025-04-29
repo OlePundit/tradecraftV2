@@ -36,6 +36,31 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.swiper-pagination1 {
+  position: absolute;
+  text-align: center;
+  transition: .3s opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+  width: 100%;
+  bottom: 10px; /* Adjust as needed */
+}
+
+.swiper-pagination1 .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #ffffff; /* Change the color as needed */
+  opacity: 0.2;
+  transition: opacity .3s;
+}
+
+.swiper-pagination1 .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #E1C17E!important; /* Change the active bullet color as needed */
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
