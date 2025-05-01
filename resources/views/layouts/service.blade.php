@@ -65,7 +65,7 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-lg-between">
 
-      <a href="index.html" class="logo me-auto me-lg-0"><img src="storage/img/logo.webp" alt="logo" class="img-fluid"></a>
+      <a href="index.html" class="logo me-auto me-lg-0"><img src="/storage/img/logo.webp" alt="logo" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
@@ -88,7 +88,7 @@
     </div>
   </header><!-- End Header -->
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center justify-content-center">
+  <section id="hero" class="d-flex align-items-center justify-content-center" style="background-image: url('{{ asset('storage/img/hero-bg.jpg') }}');">
     <div class="container" data-aos="fade-up">
 
       <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
@@ -111,7 +111,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="footer-info">
-              <a href="index.html" class="logo me-auto me-lg-0"><img src="storage/img/logo.webp" alt="logo" class="img-fluid"></a>
+              <a href="index.html" class="logo me-auto me-lg-0"><img src="/storage/img/logo.webp" alt="logo" class="img-fluid"></a>
               <p>
                 Mfangano Trade Centre <br>
                 Ground floor,shop G3, Nairobi, Kenya<br><br>
