@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
+Route::get('/services/{slug}', [App\Http\Controllers\HomeController::class, 'service'])->name('service');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

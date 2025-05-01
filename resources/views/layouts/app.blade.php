@@ -72,16 +72,9 @@
                 <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
                 <li class="dropdown"><a href="#services"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
                   <ul>
-                    <li><a href="service-details.html">Printing</a></li>
-                    <li><a href="photocopy.html">Photocopying</a></li>
-                    <li><a href="lamination.html">Lamination</a></li>
-                    <li><a href="binding.html">Binding</a></li>
-                    <li><a href="graphic.html">Graphic Design</a></li>
-                    <li><a href="branding.html">Branding</a></li>
-                    <li><a href="scanning.html">Scanning</a></li>
-                    <li><a href="printing.html">Digital Printing</a></li>
-      
-                    
+                    @foreach($services as $service)
+                    <li><a href="{{ route('service', $service->slug) }}">{{ $service->service_type }}</a></li>
+                    @endforeach
                   </ul>
                 </li>
                 <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
@@ -179,15 +172,10 @@
                     <div class="col-lg-3 col-md-6 footer-links">
                     <h4>Our Services</h4>
                     <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="service-details.html">Printing</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="photocopy.html">Photocopying</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="lamination.html">Lamination</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="binding.html">Binding</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="graphic.html">Graphic Design</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="branding.html">Branding</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="scanning.html">Scanning</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="printing.html">Digital Printing</a></li>
-        
+                        @foreach($services as $service)
+                        <li><i class="bx bx-chevron-right"></i> a href="{{ route('service', $service->slug) }}">{{ $service->service_type }}</a</li>
+                        @endforeach
+    
                     </ul>
                     </div>
         

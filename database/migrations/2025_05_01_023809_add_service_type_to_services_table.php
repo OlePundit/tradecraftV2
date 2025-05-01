@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::table('services', function (Blueprint $table) {
             $table->string('service_type')->nullable();
         });
-    }
+    }x
 
     /**
      * Reverse the migrations.
