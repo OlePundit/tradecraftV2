@@ -37,8 +37,9 @@
         <meta property="og:site_name" content="Tradecraft Printers"/>
         <!-- Template Main CSS File -->
 
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{ asset('build/assets/aapp-DHBATib1.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/assets/app-DHBATib1.css') }}">
     <link rel="stylesheet" href="{{ asset('build/assets/remixicon-bMSTyo6R.css') }}">
     <link rel="stylesheet" href="{{ asset('build/assets/style-CrzLyF-k.css') }}">
 
