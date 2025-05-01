@@ -22,3 +22,10 @@ Route::get('/services/{slug}', [App\Http\Controllers\HomeController::class, 'ser
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+\App\Models\Service::create([
+    'service_type' => 'printing',
+    'slug' => 'printing',
+    'title' => 'Professional web design services for your business.',
+    'body' => 'Professional web design services for your business.',
+]);
