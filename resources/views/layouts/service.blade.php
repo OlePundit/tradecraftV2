@@ -139,7 +139,7 @@
             <h4>Our Services</h4>
             <ul>
                 @foreach($services as $service)
-                <li><i class="bx bx-chevron-right"></i> a href="{{ route('service', $service->slug) }}">{{ $service->service_type }}</a</li>
+                <li><i class="bx bx-chevron-right"></i> <a href="{{ route('service', $service->slug) }}">{{ $service->service_type }}</a</li>
                 @endforeach
             </ul>
           </div>
