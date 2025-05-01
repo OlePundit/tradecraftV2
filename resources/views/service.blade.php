@@ -47,9 +47,9 @@
         <div class="row gy-4">
             <div class="col-lg-8">
               <div>
-                <h2>{{$service->title}}</h2>
+                <h2>{{$slug->title}}</h2>
                 <div>
-                    {!! $service->body !!}
+                    {!! $slug->body !!}
                 </div>
                   <a href="#" data-toggle="modal" data-target="#exampleModal" class="text-white">Request quote</a>
 
