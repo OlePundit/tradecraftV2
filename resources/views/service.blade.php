@@ -47,7 +47,6 @@
         <div class="row gy-4">
             <div class="col-lg-8">
               <div>
-                <h2>{{$slug->title}}</h2>
                 <div>
                     {!! $slug->body !!}
                 </div>

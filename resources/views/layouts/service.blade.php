@@ -93,8 +93,8 @@
 
       <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
         <div class="col-xl-6 col-lg-8">
-          <h1>Binding Services In Nairobi<span>.</span></h1>
-          <h2>home >> services >> binding</h2>
+          <h1>{{$slug->title}}<span>.</span></h1>
+          <h2>home >> services >> {{$slug->service_type}}</h2>
         </div>
       </div>
 
