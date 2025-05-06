@@ -55,7 +55,7 @@
               </div>
             </div>
             <div class="col-lg-4">
-              <img src="/assets/img/services-4.png" alt="service-img" width="100%">
+              <img src="/storage/{{$slug->thumbnail}}" alt="service-img" width="100%">
             </div>
 
           </div>
