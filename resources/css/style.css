@@ -923,11 +923,18 @@ section {
 }
 
 .service-details ul li {
-  padding: 1px 0;
-  display: flex;
-  align-items: center;
+  position: relative;
+  padding-left: 1.5em;
 }
-
+.service-details ul li::before {
+  content: "\f26a"; /* Unicode for bi-check-circle */
+  font-family: "Bootstrap Icons";
+  position: absolute;
+  left: 0;
+  top: 0.1em;
+  font-size: 1em;
+  color: var(--color-primary);
+}
 .service-details ul i {
   font-size: 20px;
   margin-right: 8px;

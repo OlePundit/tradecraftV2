@@ -38,6 +38,7 @@
         <!-- Template Main CSS File -->
 
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="{{ asset('build/assets/app-DHBATib1.css') }}">
     <link rel="stylesheet" href="{{ asset('build/assets/remixicon-bMSTyo6R.css') }}">
