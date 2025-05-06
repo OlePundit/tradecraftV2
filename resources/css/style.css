@@ -924,12 +924,11 @@ section {
 
 .service-details ul li {
   position: relative;
-  padding-left: 32px; /* space for icon */
   margin-bottom: 1em;
 }
 .service-details ul li::before {
   content: '\e2e6'; /* Unicode character or text */
-  color: #E1C17E; /* Bullet color */
+  color: #ffc451; /* Bullet color */
   font-size: 16px; /* Adjust size */
   margin-right: 10px; /* Spacing between bullet and text */
   font-family: 'Material Icons';
