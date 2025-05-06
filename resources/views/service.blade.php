@@ -55,6 +55,7 @@
               </div>
             </div>
             <div class="col-lg-4">
+              <i class="bi bi-buildings"></i>
               <img src="/storage/{{$slug->thumbnail}}" alt="service-img" width="100%">
             </div>
 
