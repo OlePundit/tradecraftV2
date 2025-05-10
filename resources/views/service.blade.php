@@ -45,7 +45,7 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
-            <div class="col-lg-8">
+            <div class="col-lg-8 mb-3">
               <div>
                 <div class="mb-3">
                     {!! $slug->body !!}
@@ -57,7 +57,7 @@
             <div class="col-lg-4">
               <img src="/storage/{{$slug->thumbnail}}" alt="service-img" width="100%">
             </div>
-            <div class="col-lg-8 mt-5 more-services">
+            <div class="col-lg-8 mt-3 more-services">
               <div class="mb-3">
                   <h2>More Services</h2>
                   <ul>
