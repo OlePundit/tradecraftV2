@@ -81,6 +81,13 @@
                 @endforeach
             </ul>
           </li>
+          <li class="dropdown"><a href="#services"><span>Categories</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              @foreach($categories as $category)
+              <li><a href="{{ route('category', $category->slug) }}">{{ $category->category_type }}</a></li>
+              @endforeach
+            </ul>
+          </li>
           <li><a class="nav-link scrollto" href="/#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
