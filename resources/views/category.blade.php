@@ -62,7 +62,7 @@
                     <h2>More Services</h2>
                     <ul>
                         @foreach($relatedServices as $relatedService)
-                            <li><a href="{{ route('service', $relatedService->slug) }}">{{ $relatedService->service_type }}</a></li>
+                            <li><a href="{{ route('category', $relatedService->slug) }}">{{ $relatedService->category_type }}</a></li>
                         @endforeach
                     </ul>
                 </div>
