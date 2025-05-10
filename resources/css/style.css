@@ -923,6 +923,7 @@ section {
 }
 
 .service-details ul li {
+  list-style: none!important;
   position: relative;
   margin-bottom: 1em;
 }
