@@ -906,6 +906,10 @@ section {
   font-weight: 700;
 }
 
+.service-details h1 {
+  color:#000;
+}
+
 .service-details h4 {
   font-size: 20px;
   font-weight: 700;
@@ -921,7 +925,11 @@ section {
   font-size: 15px;
   margin-left: 15px;
 }
-
+.service-details .more-services a{
+  background:none;
+  color:#000;
+  padding:0;
+}
 .service-details ul li {
   list-style: none!important;
   position: relative;

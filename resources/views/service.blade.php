@@ -47,7 +47,7 @@
         <div class="row gy-4">
             <div class="col-lg-8">
               <div>
-                <div>
+                <div class="mb-3">
                     {!! $slug->body !!}
                 </div>
                   <a href="#" data-toggle="modal" data-target="#exampleModal" class="text-white">Request quote</a>
@@ -57,13 +57,18 @@
             <div class="col-lg-4">
               <img src="/storage/{{$slug->thumbnail}}" alt="service-img" width="100%">
             </div>
-
-          </div>
-
-
+            <div class="col-lg-8 mt-5 more-services">
+              <div class="mb-3">
+                  <h2>More Services</h2>
+                  <ul>
+                      @foreach($relatedServices as $relatedService)
+                          <li><a href="{{ route('service', $relatedService->slug) }}">{{ $relatedService->service_type }}</a></li>
+                      @endforeach
+                  </ul>
+              </div>
+            </div>
 
         </div>
-
       </div>
     </section><!-- End Service Details Section -->
 

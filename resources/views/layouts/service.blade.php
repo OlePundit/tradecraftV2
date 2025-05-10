@@ -5,13 +5,12 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
   
-    <title>Tradecraft Printers</title>
+    <title>{{$slug->title}}</title>
     <meta content="#1 printing, photocopying, binding and lamination shop in Kenya" name="description">
     <meta content="" name="keywords">
   
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="https://tradecraft.co.ke/storage/favicon.png" rel="icon">
   
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,18 +24,18 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   
-    <meta name="twitter:title" content="Tradecraft Printers">
+    <meta name="twitter:title" content="{{$slug->title}}">
     <meta name="twitter:description" content="<p>#1 printing, photocopying, binding and lamination shop in Kenya</p>">
-    <meta name="twitter:image" content="https://tradecraft.co.ke/assets/img/twitter-card.png">
+    <meta name="twitter:image" content="https://tradecraft.co.ke/storage/{{$slug->thumbnail}}">
     <meta name="twitter:site" content="tradecraft.co.ke">
     <meta name="twitter:card" content="summary_large_image">    
     <meta name="twitter:creator" content="@tradecraft2017">
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Tradecraft Printers"/>
+    <meta property="og:title" content="{{$slug->title}}"/>
     <meta property="og:description" content="<p>#1 printing, photocopying, binding and lamination shop in Kenya</p>" />
-    <meta property="og:image" content="https://tradecraft.co.ke/assets/img/twitter-card.png" />
+    <meta property="og:image" content="https://tradecraft.co.ke/storage/{{$slug->thumbnail}}" />
     <meta property="og:url" content="https://tradecraft.co.ke" />
-    <meta property="og:site_name" content="Tradecraft Printers"/>
+    <meta property="og:site_name" content="{{$slug->title}}"/>
     <!-- Template Main CSS File -->
 
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">

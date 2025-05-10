@@ -9,8 +9,7 @@
         <meta content="" name="keywords">
       
         <!-- Favicons -->
-        <link href="assets/img/favicon.png" rel="icon">
-        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+        <link href="https://tradecraft.co.ke/storage/favicon.png" rel="icon">
       
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,6 +46,8 @@
     <link rel="stylesheet" href="{{ asset('build/assets/variables-DBBMD_mi.css') }}">
     <script src="{{ asset('bui1ld/assets/app-7q1JrtwP.js') }}"></script>
     <script src="{{ asset('build/assets/app-l0sNRNKZ.js') }}"></script>
+
+    
 
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">

@@ -29,14 +29,20 @@ class HomeController extends Controller
     {
         $services = Service::all();
         $categories = Blog::all();
-
-        return view('service', compact('slug','categories', 'services'));
+        $relatedServices = Service::where('id', '!=', $slug->id)
+        ->inRandomOrder()
+        ->take(3)
+        ->get();
+        return view('service', compact('slug','categories', 'services','relatedServices'));
     }
     public function category(Blog $slug)
     {
         $categories = Blog::all();
         $services = Service::all();
-
-        return view('category', compact('slug', 'categories','services'));
+        $relatedServices = Blog::where('id', '!=', $slug->id)
+        ->inRandomOrder()
+        ->take(3)
+        ->get();
+        return view('category', compact('slug', 'categories','services','relatedServices'));
     }
 }

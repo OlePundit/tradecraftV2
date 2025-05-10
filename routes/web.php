@@ -22,7 +22,7 @@ Route::get('/services/{slug}', [App\Http\Controllers\HomeController::class, 'ser
 Route::get('/categories/{slug}', [App\Http\Controllers\HomeController::class, 'category'])->name('category');
 
 Route::get('/service-details.html', function () {
-    return Redirect::to('https://tradecraft.co.ke/services/printing-services-in-nairobi', 301);
+    return Redirect::to('https://tradecraft.co.ke/services/printing-services-in-nairobi-kenya', 301);
 });
 
 Route::get('/photocopy.html', function () {
@@ -38,7 +38,7 @@ Route::get('/binding.html', function () {
 });
 
 Route::get('/graphic.html', function () {
-    return Redirect::to('https://tradecraft.co.ke/services/graphic-design-services-in-nairobi', 301);
+    return Redirect::to('https://tradecraft.co.ke/services/graphic-design-services-in-nairobi-kenya', 301);
 });
 
 Route::get('/branding.html', function () {
@@ -50,7 +50,7 @@ Route::get('/scanning.html', function () {
 });
 
 Route::get('/printing.html', function () {
-    return Redirect::to('https://tradecraft.co.ke/services/printing-services-in-nairobi', 301);
+    return Redirect::to('https://tradecraft.co.ke/services/digital-printing-services-in-nairobi', 301);
 });
 
 Route::group(['prefix' => 'admin'], function () {
