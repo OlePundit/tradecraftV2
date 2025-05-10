@@ -21,22 +21,22 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $blogs = Blog::all();
+        $categories = Blog::all();
         $services = Service::all();
-        return view('home', compact('services','blogs'));
+        return view('home', compact('services','categories'));
     }
     public function service(Service $slug)
     {
         $services = Service::all();
-        $blogs = Blog::all();
+        $categories = Blog::all();
 
-        return view('service', compact('slug','blogs', 'services'));
+        return view('service', compact('slug','categories', 'services'));
     }
     public function category(Blog $slug)
     {
-        $blogs = Blog::all();
+        $categories = Blog::all();
         $services = Service::all();
 
-        return view('category', compact('slug', 'blogs','services'));
+        return view('category', compact('slug', 'categories','services'));
     }
 }
