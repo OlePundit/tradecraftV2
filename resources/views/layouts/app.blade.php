@@ -47,7 +47,6 @@
     <script src="{{ asset('bui1ld/assets/app-7q1JrtwP.js') }}"></script>
     <script src="{{ asset('build/assets/app-l0sNRNKZ.js') }}"></script>
 
-    
 
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -87,6 +86,11 @@
                   </ul>
                 </li>
                 <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                <li>
+                  <a href="https://wa.me/254713445339" target="_blank">
+                    <i class="bi bi-whatsapp mx-2"></i>always online
+                  </a>
+                </li>
               </ul>
               <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
