@@ -47,7 +47,7 @@
         <div class="row gy-4">
             <div class="col-lg-8">
               <div>
-                <div>
+                <div class="mb-3">
                     {!! $slug->body !!}
                 </div>
                   <a href="#" data-toggle="modal" data-target="#exampleModal" class="text-white mt-5">Request quote</a>
