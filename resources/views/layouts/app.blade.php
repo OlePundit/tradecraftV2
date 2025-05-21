@@ -48,6 +48,7 @@
     <script src="{{ asset('build/assets/app-l0sNRNKZ.js') }}"></script>
 
 
+
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
       <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -87,8 +88,8 @@
                 </li>
                 <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
                 <li>
-                  <a href="https://wa.me/254713445339" target="_blank">
-                    <i class="bi bi-whatsapp mx-2"></i>always online
+                  <a href="https://wa.me/254713445339" class="whatsapp-btn" target="_blank">
+                    <i class="bi bi-whatsapp mx-2"></i>order via whatsapp
                   </a>
                 </li>
               </ul>
@@ -149,6 +150,22 @@
         <main id="main">
             @yield('content')
         </main>
+        <section class="fixed-bottom whatsapp-bottom">
+          <div class="row whatsapp-bottom-row">
+            <div class=col-lg-2>
+              <ul>
+                <li>
+                  <a href="tel:+254713445339" class="call-btn"><i class="bi bi-telephone mx-2"></i>Call Us</a>
+                </li>
+                <li>
+                  <a href="https://wa.me/+254713445339" class="whatsapp-btn" target="_blank">
+                    <i class="bi bi-whatsapp mx-2"></i>order via whatsapp
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
         <!-- ======= Footer ======= -->
         <footer id="footer">
             <div class="footer-top">
@@ -289,9 +306,12 @@
         </script>
         <script>
             $(document).ready(function () {
-                $('#exampleModal').modal();
+                setTimeout(function () {
+                    $('#exampleModal').modal();
+                }, 5000); // 5000 milliseconds = 5 seconds
             });
         </script>
+
         
         <script type="application/ld+json">
             {

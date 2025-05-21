@@ -193,6 +193,39 @@ h6 {
   display: inline-block;
   border: 2px solid #ffc451;
 }
+.whatsapp-btn {
+  color: #fff;
+  border-radius: 4px;
+  padding: 7px 25px 8px 25px!important;
+  white-space: nowrap;
+  background: #25D366;
+  font-size: 14px;
+  display: inline-block;
+  margin-left: 30px;
+  width:90%
+
+}
+.whatsapp-bottom ul{
+  list-style: none;
+  padding: 10px 25px;
+  border-radius:16px;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+.whatsapp-bottom .call-btn{
+  padding: 7px 25px 8px 25px!important;
+  border-radius: 4px;
+  color: #000;
+  background-color: #d3d3d3;
+  white-space: nowrap;
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 30px;
+  margin-bottom: 12px;
+  width:90%
+}
+.whatsapp-bottom .whatsapp-bottom-row{
+  justify-content: right;
+}
 
 .get-started-btn:hover {
   background: #ffbb38;
