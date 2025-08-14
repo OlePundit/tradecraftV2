@@ -191,7 +191,7 @@ h6 {
   transition: 0.3s;
   font-size: 14px;
   display: inline-block;
-  border: 2px solid #ffc451;
+  background: #ffc451;
 }
 .whatsapp-btn {
   color: #fff;

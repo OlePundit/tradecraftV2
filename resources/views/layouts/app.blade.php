@@ -304,13 +304,6 @@
             });
     
         </script>
-        <script>
-            $(document).ready(function () {
-                setTimeout(function () {
-                    $('#exampleModal').modal();
-                }, 5000); // 5000 milliseconds = 5 seconds
-            });
-        </script>
 
         
         <script type="application/ld+json">
