@@ -3,7 +3,7 @@
 @section('content')
 <style>
     .service-item .img {
-        height: 220px;
+        height: 270px;
         overflow: hidden;
     }
     .service-item .img img {
