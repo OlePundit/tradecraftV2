@@ -1,6 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+    .service-item .img {
+        height: 220px;
+        overflow: hidden;
+    }
+    .service-item .img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
       
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
