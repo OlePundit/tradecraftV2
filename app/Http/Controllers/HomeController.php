@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Service;
 use App\Models\Blog;
+use App\Models\Portfolio;
 
 class HomeController extends Controller
 {
@@ -23,7 +24,10 @@ class HomeController extends Controller
     {
         $categories = Blog::all();
         $services = Service::all();
-        return view('home', compact('services','categories'));
+        $prints = Portfolio::where('category', 'print')->get();
+        $photocopys = Portfolio::where('category', 'photocopy')->get();
+        $bindings = Portfolio::where('category', 'binding')->get();
+        return view('home', compact('services','categories','prints','photocopys','bindings'));
     }
     public function service(Service $slug)
     {

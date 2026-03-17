@@ -350,122 +350,50 @@
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
+        @foreach($prints as $item)
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+            <img src="{{ asset('storage/' . $item->image) }}" class="img-fluid" alt="Print">
+            <div class="portfolio-info">
+                <h4>Print</h4>
+                <p>Print services</p>
+                <div class="portfolio-links">
+                <a href="{{ asset('storage/' . $item->image) }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Print"><i class="bx bx-plus"></i></a>
+                </div>
+            </div>
+            </div>
+        </div>
+        @endforeach
+
+        @foreach($photocopys as $item)
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-            <img src="storage/img/portfolio/portfolio-1.webp" class="img-fluid" alt="portfolio-img">
+            <img src="{{ asset('storage/' . $item->image) }}" class="img-fluid" alt="Photocopying">
             <div class="portfolio-info">
-                <h4>Corporate documents</h4>
+                <h4>Photocopying</h4>
                 <p>Photocopying services</p>
                 <div class="portfolio-links">
-                <a href="storage/img/portfolio/portfolio-1.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Corporate documents"><i class="bx bx-plus"></i></a>
+                <a href="{{ asset('storage/' . $item->image) }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Photocopying"><i class="bx bx-plus"></i></a>
                 </div>
             </div>
             </div>
         </div>
+        @endforeach
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-            <img src="storage/img/portfolio/portfolio-2.webp" class="img-fluid" alt="portfolio-img">
-            <div class="portfolio-info">
-                <h4>Birthday invitation card</h4>
-                <p>Print services</p>
-                <div class="portfolio-links">
-                <a href="storage/img/portfolio/portfolio-2.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Birthday invitation card"><i class="bx bx-plus"></i></a>
-                </div>
-            </div>
-            </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-            <img src="storage/img/portfolio/portfolio-3.webp" class="img-fluid" alt="portfolio-img">
-            <div class="portfolio-info">
-                <h4>Certificates</h4>
-                <p>Print services</p>
-                <div class="portfolio-links">
-                <a href="storage/img/portfolio/portfolio-3.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Certificates"><i class="bx bx-plus"></i></a>
-                </div>
-            </div>
-            </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-            <img src="storage/img/portfolio/portfolio-4.webp" class="img-fluid" alt="portfolio-img">
-            <div class="portfolio-info">
-                <h4>Fliers</h4>
-                <p>Print services</p>
-                <div class="portfolio-links">
-                <a href="storage/img/portfolio/portfolio-4.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Fliers"><i class="bx bx-plus"></i></a>
-                </div>
-            </div>
-            </div>
-        </div>
-
+        @foreach($bindings as $item)
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-            <img src="storage/img/portfolio/portfolio-5.webp" class="img-fluid" alt="portfolio-img">
+            <img src="{{ asset('storage/' . $item->image) }}" class="img-fluid" alt="Binding">
             <div class="portfolio-info">
-                <h4>Books</h4>
+                <h4>Binding</h4>
                 <p>Binding services</p>
                 <div class="portfolio-links">
-                <a href="storage/img/portfolio/portfolio-5.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Books"><i class="bx bx-plus"></i></a>
+                <a href="{{ asset('storage/' . $item->image) }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Binding"><i class="bx bx-plus"></i></a>
                 </div>
             </div>
             </div>
         </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-            <img src="storage/img/portfolio/portfolio-6.webp" class="img-fluid" alt="portfolio-img">
-            <div class="portfolio-info">
-                <h4>Fliers</h4>
-                <p>Print services</p>
-                <div class="portfolio-links">
-                <a href="storage/img/portfolio/portfolio-6.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Fliers"><i class="bx bx-plus"></i></a>
-                </div>
-            </div>
-            </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-            <img src="storage/img/portfolio/portfolio-7.webp" class="img-fluid" alt="portfolio-img">
-            <div class="portfolio-info">
-                <h4>CBC material</h4>
-                <p>Binding services</p>
-                <div class="portfolio-links">
-                <a href="storage/img/portfolio/portfolio-7.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="CBC material"><i class="bx bx-plus"></i></a>
-                </div>
-            </div>
-            </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-            <img src="storage/img/portfolio/portfolio-8.webp" class="img-fluid" alt="portfolio-img">
-            <div class="portfolio-info">
-                <h4>Corporate documents</h4>
-                <p>Photocopying services</p>
-                <div class="portfolio-links">
-                <a href="storage/img/portfolio/portfolio-8.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Corporate documents"><i class="bx bx-plus"></i></a>
-                </div>
-            </div>
-            </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-            <img src="storage/img/portfolio/portfolio-9.webp" class="img-fluid" alt="portfolio-img">
-            <div class="portfolio-info">
-                <h4>CBC Material</h4>
-                <p>Binding services</p>
-                <div class="portfolio-links">
-                <a href="storage/img/portfolio/portfolio-9.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="CBC Material"><i class="bx bx-plus"></i></a>
-                </div>
-            </div>
-            </div>
-        </div>
+        @endforeach
 
         </div>
 
