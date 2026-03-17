@@ -679,3 +679,24 @@
 
 
 @endsection
+
+@section('scripts')
+<script>
+$(document).ready(function () {
+    $('#portfolio-flters li').on('click', function () {
+        var filterValue = $(this).data('filter');
+
+        // Swap active class
+        $('#portfolio-flters li').removeClass('filter-active');
+        $(this).addClass('filter-active');
+
+        if (filterValue === '*') {
+            $('.portfolio-item').fadeIn(300);
+        } else {
+            $('.portfolio-item').hide();
+            $('.portfolio-item' + filterValue).fadeIn(300);
+        }
+    });
+});
+</script>
+@endsection
