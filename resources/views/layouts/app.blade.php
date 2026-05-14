@@ -41,7 +41,7 @@
 
     <link rel="stylesheet" href="{{ asset('build/assets/app-DHBATib1.css') }}">
     <link rel="stylesheet" href="{{ asset('build/assets/remixicon-bMSTyo6R.css') }}">
-    <link rel="stylesheet" href="{{ asset('build/assets/style-B-VoP4X1.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/assets/style-CrzLyF-k.css') }}">
 
     <link rel="stylesheet" href="{{ asset('build/assets/variables-DBBMD_mi.css') }}">
     <script src="{{ asset('bui1ld/assets/app-7q1JrtwP.js') }}"></script>
