@@ -1007,6 +1007,9 @@ section {
   color:var(--color-yellow)!important;
   text-decoration: none;
 }
+.service-details img{
+  border-radius:16px;
+}
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
