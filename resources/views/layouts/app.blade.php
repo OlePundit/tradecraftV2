@@ -321,12 +321,11 @@
         </script>
 
         <script type="application/ld+json">
-            {
+          {
             "@context": "http://schema.org",
             "@type": "LocalBusiness",
             "name": "Tradecraft Printers",
-            "description": "#1 printing, photocopying, binding and lamination shop in Kenya",
-            "url": "https://tradecraft.co.ke",
+            "description": "Leading printing, photocopying, binding, lamination, scanning, and graphic design services in Nairobi, Kenya. Fast, reliable, and affordable with state-of-the-art machines.",            "url": "https://tradecraft.co.ke",
             "telephone": "+254 713 445 339",
             "address": {
                 "@type": "PostalAddress",
@@ -338,16 +337,83 @@
             },
             "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": 1.240695
+                "latitude": -1.2833,
                 "longitude": 36.8079746
             },
-            "openingHours": "Mo-Sa 07:00-19:00",
-            "paymentAccepted": ["Cash", "Mpesa"],
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "08:00",
+                "closes": "18:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "08:00",
+                "closes": "17:00"
+              }
+            ],
+            "paymentAccepted": ["Cash", "Credit Card", "Mobile Money"],
             "priceRange": "KES",
             "image": "https://tradecraft.co.ke/assets/img/twitter-card.png",
             "logo": "https://tradecraft.co.ke/assets/img/logo.png",
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Printing Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Digital Printing",
+                    "description": "Bulk and high-speed digital printing using Konica Minolta machines"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Photocopying",
+                    "description": "Fast bulk photocopying with KYOCERA machines"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Binding",
+                    "description": "Hardcover and softcover binding services"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Lamination",
+                    "description": "Professional document and poster lamination"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Scanning",
+                    "description": "High-speed document scanning and digitization"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Graphic Design & Branding",
+                    "description": "Banners, roll-ups, signage, T-shirts and merchandise printing"
+                  }
+                }
+              ]
             }
-            </script>
+          }
+        </script>
             
         
         </body>

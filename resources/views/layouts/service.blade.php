@@ -209,11 +209,11 @@
     {
       "@context": "http://schema.org",
       "@type": "Service",
-      "serviceType": "Binding Service",
+      "serviceType": "{{ $slug->service_type ?? $slug->category_type }}",
       "provider": {
         "@type": "LocalBusiness",
         "name": "Tradecraft Printers",
-        "url": "https://tradecraft.co.ke/binding.html",
+        "url": "{{ route('service', $slug->slug) }}",
         "telephone": "+254 713 445 339",
         "address": {
           "@type": "PostalAddress",
