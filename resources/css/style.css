@@ -997,13 +997,13 @@ section {
   color: #000!important;
   text-decoration: none;
 }
-.service-details a{
+.service-details .modal_btn{
   background: var(--color-primary);
   padding:9px 13px;
   border-radius: 8px;
   margin-top: 20px!important;
 }
-.service-details a:hover{
+.service-details .modal_btn:hover{
   color:var(--color-yellow)!important;
   text-decoration: none;
 }

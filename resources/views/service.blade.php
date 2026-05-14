@@ -50,7 +50,7 @@
                 <div class="mb-3">
                     {!! $slug->body !!}
                 </div>
-                  <a href="#" data-toggle="modal" data-target="#exampleModal" class="text-white">Request quote</a>
+                  <a href="#" data-toggle="modal" data-target="#exampleModal" class="text-white modal_btn">Request quote</a>
 
               </div>
             </div>
