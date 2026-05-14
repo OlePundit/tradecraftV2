@@ -555,7 +555,7 @@
         </div>
 
         <div>
-        <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8098669777096!2d36.82582667585671!3d-1.2882439986994958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1129ae5c62df%3A0x71907e92ebf1d1d!2sMfangano%20Trade%20Centre!5e0!3m2!1sen!2ske!4v1709153847855!5m2!1sen!2ske" frameborder="0" allowfullscreen></iframe>
+        <iframe style="border:0; width: 100%; height: 270px;" src="https://maps.google.com/maps?q=Mfangano+Trade+Centre,+Nairobi,+Kenya&output=embed" frameborder="0" allowfullscreen></iframe>
         </div>
 
         <div class="row mt-5">
