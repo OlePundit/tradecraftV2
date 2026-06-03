@@ -96,7 +96,7 @@
         <div class="col-xl-4 col-md-6 mb-5" data-aos="zoom-in" data-aos-delay="500">
             <div class="service-item">
             <div class="img">
-                <img src="storage/img/services-4.webp" class="img-fluid" alt="service-img">
+                <img src="https://res.cloudinary.com/dj52zkarc/image/upload/v1780514061/services-4_jicvvh.webp" class="img-fluid" alt="service-img">
             </div>
             <div class="details position-relative">
                 <div class="icon">
