@@ -26,7 +26,7 @@
             <div class="service-item">
             <div class="img">
                 <img
-                sizes="(max-width: 1400px) 100vw, 1400px"
+                sizes="(max-width: 896px) 100vw, 896px"
                 srcset="
                 services-8_wrnzw5_c_scale,w_200.webp 200w,
                 services-8_wrnzw5_c_scale,w_488.webp 488w,
@@ -111,7 +111,7 @@
             <div class="service-item">
             <div class="img">
                 <img
-                    sizes="(max-width: 1400px) 100vw, 1400px"
+                    sizes="(max-width: 913px) 100vw, 913px"
                     srcset="
                     services-4_ux4p6w_c_scale,w_200.webp 200w,
                     services-4_ux4p6w_c_scale,w_502.webp 502w,
