@@ -25,7 +25,15 @@
         <div class="col-xl-4 col-md-6 mb-5" data-aos="zoom-in" data-aos-delay="200">
             <div class="service-item">
             <div class="img">
-                <img src="storage/img/services-8.webp" class="img-fluid" alt="service-img">
+                <img
+                sizes="(max-width: 1400px) 100vw, 1400px"
+                srcset="
+                services-8_wrnzw5_c_scale,w_200.webp 200w,
+                services-8_wrnzw5_c_scale,w_488.webp 488w,
+                services-8_wrnzw5_c_scale,w_649.webp 649w,
+                services-8_wrnzw5_c_scale,w_896.webp 896w,"
+                src="services-8_wrnzw5_c_scale,w_896.webp"
+                class="img-fluid" alt="service-img">
             </div>
             <div class="details position-relative">
                 <div class="icon">
@@ -62,7 +70,13 @@
         <div class="col-xl-4 col-md-6 mb-5" data-aos="zoom-in" data-aos-delay="400">
             <div class="service-item">
             <div class="img">
-                <img src="storage/img/services-7.webp" class="img-fluid" alt="service-img">
+                <img
+                sizes="(max-width: 800px) 100vw, 800px"
+                srcset="
+                services-7_iwmsqj_c_scale,w_200.webp 200w,
+                services-7_iwmsqj_c_scale,w_800.webp 800w"
+                src="services-7_iwmsqj_c_scale,w_800.webp"
+                 class="img-fluid" alt="service-img">
             </div>
             <div class="details position-relative">
                 <div class="icon">
@@ -96,7 +110,15 @@
         <div class="col-xl-4 col-md-6 mb-5" data-aos="zoom-in" data-aos-delay="500">
             <div class="service-item">
             <div class="img">
-                <img src="https://res.cloudinary.com/dj52zkarc/image/upload/v1780514061/services-4_jicvvh.webp" class="img-fluid" alt="service-img">
+                <img
+                    sizes="(max-width: 1400px) 100vw, 1400px"
+                    srcset="
+                    services-4_ux4p6w_c_scale,w_200.webp 200w,
+                    services-4_ux4p6w_c_scale,w_502.webp 502w,
+                    services-4_ux4p6w_c_scale,w_703.webp 703w,
+                    services-4_ux4p6w_c_scale,w_913.webp 913w,"
+                    src="services-4_ux4p6w_c_scale,w_913.webp"
+                     class="img-fluid" alt="service-img">
             </div>
             <div class="details position-relative">
                 <div class="icon">
@@ -112,7 +134,14 @@
         <div class="col-xl-4 col-md-6 mb-5" data-aos="zoom-in" data-aos-delay="600">
             <div class="service-item">
             <div class="img">
-                <img src="storage/img/services-5.webp" class="img-fluid" alt="service-img">
+                <img
+                sizes="(max-width: 800px) 100vw, 800px"
+                srcset="
+                services-5_n0cemg_c_scale,w_200.webp 200w,
+                services-5_n0cemg_c_scale,w_636.webp 636w,
+                services-5_n0cemg_c_scale,w_800.webp 800w"
+                src="services-5_n0cemg_c_scale,w_800.webp"
+                class="img-fluid" alt="service-img">
             </div>
             <div class="details position-relative">
                 <div class="icon">
@@ -127,7 +156,14 @@
         <div class="col-xl-4 col-md-6 mb-5" data-aos="zoom-in" data-aos-delay="200">
             <div class="service-item">
             <div class="img">
-                <img src="storage/img/services-1.webp" class="img-fluid" alt="service-img">
+                <img
+                sizes="(max-width: 800px) 100vw, 800px"
+                srcset="
+                services-1_vrh8dp_c_scale,w_200.webp 200w,
+                services-1_vrh8dp_c_scale,w_673.webp 673w,
+                services-1_vrh8dp_c_scale,w_800.webp 800w"
+                src="services-1_vrh8dp_c_scale,w_800.webp"
+                class="img-fluid" alt="service-img">
             </div>
             <div class="details position-relative">
                 <div class="icon">
@@ -143,7 +179,14 @@
         <div class="col-xl-4 col-md-6 mb-5" data-aos="zoom-in" data-aos-delay="700">
             <div class="service-item">
             <div class="img">
-                <img src="storage/img/services-6.webp" class="img-fluid" alt="service-img">
+                <img
+                sizes="(max-width: 800px) 100vw, 800px"
+                srcset="
+                services-6_gq8ami_c_scale,w_200.webp 200w,
+                services-6_gq8ami_c_scale,w_540.webp 540w,
+                services-6_gq8ami_c_scale,w_800.webp 800w"
+                src="services-6_gq8ami_c_scale,w_800.webp"
+                class="img-fluid" alt="service-img">
             </div>
             <div class="details position-relative">
                 <div class="icon">
