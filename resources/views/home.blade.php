@@ -28,11 +28,11 @@
                 <img
                 sizes="(max-width: 896px) 100vw, 896px"
                 srcset="
-                services-8_wrnzw5_c_scale,w_200.webp 200w,
-                services-8_wrnzw5_c_scale,w_488.webp 488w,
-                services-8_wrnzw5_c_scale,w_649.webp 649w,
-                services-8_wrnzw5_c_scale,w_896.webp 896w,"
-                src="services-8_wrnzw5_c_scale,w_896.webp"
+                storage/img/services-8_wrnzw5_c_scale,w_200.webp 200w,
+                storage/img/services-8_wrnzw5_c_scale,w_488.webp 488w,
+                storage/img/services-8_wrnzw5_c_scale,w_649.webp 649w,
+                storage/img/services-8_wrnzw5_c_scale,w_896.webp 896w,"
+                src="storage/img/services-8_wrnzw5_c_scale,w_896.webp"
                 class="img-fluid" alt="service-img">
             </div>
             <div class="details position-relative">
@@ -73,9 +73,9 @@
                 <img
                 sizes="(max-width: 800px) 100vw, 800px"
                 srcset="
-                services-7_iwmsqj_c_scale,w_200.webp 200w,
-                services-7_iwmsqj_c_scale,w_800.webp 800w"
-                src="services-7_iwmsqj_c_scale,w_800.webp"
+                storage/img/services-7_iwmsqj_c_scale,w_200.webp 200w,
+                storage/img/services-7_iwmsqj_c_scale,w_800.webp 800w"
+                src="storage/img/services-7_iwmsqj_c_scale,w_800.webp"
                  class="img-fluid" alt="service-img">
             </div>
             <div class="details position-relative">
@@ -113,11 +113,11 @@
                 <img
                     sizes="(max-width: 913px) 100vw, 913px"
                     srcset="
-                    services-4_ux4p6w_c_scale,w_200.webp 200w,
-                    services-4_ux4p6w_c_scale,w_502.webp 502w,
-                    services-4_ux4p6w_c_scale,w_703.webp 703w,
-                    services-4_ux4p6w_c_scale,w_913.webp 913w,"
-                    src="services-4_ux4p6w_c_scale,w_913.webp"
+                    storage/img/services-4_ux4p6w_c_scale,w_200.webp 200w,
+                    storage/img/services-4_ux4p6w_c_scale,w_502.webp 502w,
+                    storage/img/services-4_ux4p6w_c_scale,w_703.webp 703w,
+                    storage/img/services-4_ux4p6w_c_scale,w_913.webp 913w,"
+                    src="storage/img/services-4_ux4p6w_c_scale,w_913.webp"
                      class="img-fluid" alt="service-img">
             </div>
             <div class="details position-relative">
@@ -137,10 +137,10 @@
                 <img
                 sizes="(max-width: 800px) 100vw, 800px"
                 srcset="
-                services-5_n0cemg_c_scale,w_200.webp 200w,
-                services-5_n0cemg_c_scale,w_636.webp 636w,
-                services-5_n0cemg_c_scale,w_800.webp 800w"
-                src="services-5_n0cemg_c_scale,w_800.webp"
+                storage/img/services-5_n0cemg_c_scale,w_200.webp 200w,
+                storage/img/services-5_n0cemg_c_scale,w_636.webp 636w,
+                storage/img/services-5_n0cemg_c_scale,w_800.webp 800w"
+                src="storage/img/services-5_n0cemg_c_scale,w_800.webp"
                 class="img-fluid" alt="service-img">
             </div>
             <div class="details position-relative">
@@ -159,10 +159,10 @@
                 <img
                 sizes="(max-width: 800px) 100vw, 800px"
                 srcset="
-                services-1_vrh8dp_c_scale,w_200.webp 200w,
-                services-1_vrh8dp_c_scale,w_673.webp 673w,
-                services-1_vrh8dp_c_scale,w_800.webp 800w"
-                src="services-1_vrh8dp_c_scale,w_800.webp"
+                storage/img/services-1_vrh8dp_c_scale,w_200.webp 200w,
+                storage/img/services-1_vrh8dp_c_scale,w_673.webp 673w,
+                storage/img/services-1_vrh8dp_c_scale,w_800.webp 800w"
+                src="storage/img/services-1_vrh8dp_c_scale,w_800.webp"
                 class="img-fluid" alt="service-img">
             </div>
             <div class="details position-relative">
@@ -182,10 +182,10 @@
                 <img
                 sizes="(max-width: 800px) 100vw, 800px"
                 srcset="
-                services-6_gq8ami_c_scale,w_200.webp 200w,
-                services-6_gq8ami_c_scale,w_540.webp 540w,
-                services-6_gq8ami_c_scale,w_800.webp 800w"
-                src="services-6_gq8ami_c_scale,w_800.webp"
+                storage/img/services-6_gq8ami_c_scale,w_200.webp 200w,
+                storage/img/services-6_gq8ami_c_scale,w_540.webp 540w,
+                storage/img/services-6_gq8ami_c_scale,w_800.webp 800w"
+                src="storage/img/services-6_gq8ami_c_scale,w_800.webp"
                 class="img-fluid" alt="service-img">
             </div>
             <div class="details position-relative">
