@@ -4,60 +4,76 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  
+
     <title>{{$slug->title}}</title>
     <meta content="#1 printing, photocopying, binding and lamination shop in Kenya" name="description">
     <meta content="" name="keywords">
-  
-    <!-- Favicons -->
-    <link href="https://tradecraft.co.ke/storage/favicon.png" rel="icon">
-  
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-   
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-  
+    <!-- Open Graph / Twitter Card -->
     <meta name="twitter:title" content="{{$slug->title}}">
-    <meta name="twitter:description" content="<p>#1 printing, photocopying, binding and lamination shop in Kenya</p>">
+    <meta name="twitter:description" content="#1 printing, photocopying, binding and lamination shop in Kenya">
     <meta name="twitter:image" content="https://tradecraft.co.ke/storage/{{$slug->thumbnail}}">
     <meta name="twitter:site" content="tradecraft.co.ke">
-    <meta name="twitter:card" content="summary_large_image">    
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:creator" content="@tradecraft2017">
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{$slug->title}}"/>
-    <meta property="og:description" content="<p>#1 printing, photocopying, binding and lamination shop in Kenya</p>" />
+    <meta property="og:description" content="#1 printing, photocopying, binding and lamination shop in Kenya" />
     <meta property="og:image" content="https://tradecraft.co.ke/storage/{{$slug->thumbnail}}" />
     <meta property="og:url" content="https://tradecraft.co.ke" />
     <meta property="og:site_name" content="{{$slug->title}}"/>
-    <!-- Template Main CSS File -->
 
+    <!-- Favicon -->
+    <link href="https://tradecraft.co.ke/storage/favicon.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Icon Fonts -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
-<link rel="stylesheet" href="{{ asset('build/assets/app-DHBATib1.css') }}">
-<link rel="stylesheet" href="{{ asset('build/assets/remixicon-bMSTyo6R.css') }}">
-<link rel="stylesheet" href="{{ asset('build/assets/style-CrzLyF-k.css') }}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-<link rel="stylesheet" href="{{ asset('build/assets/variables-DBBMD_mi.css') }}">
-<script src="{{ asset('bui1ld/assets/app-7q1JrtwP.js') }}"></script>
-<script src="{{ asset('build/assets/app-l0sNRNKZ.js') }}"></script>
+    <!-- Vendor CSS -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-  <!-- Bootstrap JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
+    <!-- App CSS -->
+    <link rel="stylesheet" href="{{ asset('build/assets/app-DHBATib1.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/assets/remixicon-bMSTyo6R.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/assets/style-CrzLyF-k.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/assets/variables-DBBMD_mi.css') }}">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Service",
+      "serviceType": "{{ $slug->service_type ?? $slug->category_type }}",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Tradecraft Printers",
+        "url": "{{ route('service', $slug->slug) }}",
+        "telephone": "+254 713 445 339",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Mfangano Trade Centre",
+          "addressLocality": "Nairobi",
+          "addressRegion": "Kenya",
+          "postalCode": "00100",
+          "addressCountry": "Kenya"
+        }
+      },
+      "description": "Binding Services In Nairobi",
+      "areaServed": ["Nairobi", "Kenya"]
+    }
+    </script>
 </head>
 
 <body>
@@ -100,6 +116,7 @@
 
     </div>
   </header><!-- End Header -->
+
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center justify-content-center" style="background-image: url('{{ asset('storage/img/hero-bg.jpg') }}');">
     <div class="container" data-aos="fade-up">
@@ -113,11 +130,13 @@
 
     </div>
   </section><!-- End Hero -->
+
   <main id="main">
     @yield('content')
-</main>
- <!-- ======= Footer ======= -->
- <footer id="footer">
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
     <div class="footer-top">
       <div class="container">
         <div class="row">
@@ -152,12 +171,10 @@
             <h4>Our Services</h4>
             <ul>
                 @foreach($services as $service)
-                <li><i class="bx bx-chevron-right"></i> <a href="{{ route('service', $service->slug) }}">{{ $service->service_type }}</a</li>
+                <li><i class="bx bx-chevron-right"></i> <a href="{{ route('service', $service->slug) }}">{{ $service->service_type }}</a></li>
                 @endforeach
             </ul>
           </div>
-
-    
 
         </div>
       </div>
@@ -168,33 +185,40 @@
         &copy; Copyright <strong><span>Tradecraft Printers</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-
         Designed by <a href="https://sansa.digital/">Sansa Digital</a>
       </div>
     </div>
   </footer><!-- End Footer -->
 
-
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
+  <!-- ======= Scripts ======= -->
+  <!-- jQuery must come before Bootstrap and jQuery UI -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Vendor JS -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
+  <!-- Template Main JS -->
   <script src="assets/js/main.js"></script>
-  <script>
-    $( function() {
-      $( "#tabs" ).tabs();
-    } );
-  </script>
+
+  <!-- App JS -->
+  <script src="{{ asset('build/assets/app-7q1JrtwP.js') }}"></script>
+  <script src="{{ asset('build/assets/app-l0sNRNKZ.js') }}"></script>
 
   <script>
+    $(function () {
+      $("#tabs").tabs();
+    });
+
     (function () {
       var header = document.getElementById('header');
       if (!header) return;
@@ -205,29 +229,9 @@
       onScroll();
     })();
   </script>
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Service",
-      "serviceType": "{{ $slug->service_type ?? $slug->category_type }}",
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Tradecraft Printers",
-        "url": "{{ route('service', $slug->slug) }}",
-        "telephone": "+254 713 445 339",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Mfangano Trade Centre",
-          "addressLocality": "Nairobi",
-          "addressRegion": "Kenya",
-          "postalCode": "00100",
-          "addressCountry": "Kenya"
-        },
-      },
-      "description": "Binding Services In Nairobi",
-      "areaServed": ["Nairobi", "Kenya"],
-    }
-    </script>
+
+  @yield('scripts')
+
 </body>
 
 </html>
