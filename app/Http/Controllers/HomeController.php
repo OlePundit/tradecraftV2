@@ -7,7 +7,6 @@ use Illuminate\Support\Str;
 use App\Models\Service;
 use App\Models\Blog;
 use App\Models\Portfolio;
-use TCG\Voyager\Models\Post;
 
 class HomeController extends Controller
 {
@@ -41,23 +40,23 @@ class HomeController extends Controller
     {
         $categories = Blog::all();
         $services = Service::all();
-        $posts = Post::published()->latest()->paginate(9);
+        $posts = Blog::whereNotNull('slug')->latest()->paginate(9);
         return view('blog', compact('services', 'categories', 'posts'));
     }
     public function blogShow($slug)
     {
         $categories = Blog::all();
         $services = Service::all();
-        $post = Post::published()->where('slug', $slug)->firstOrFail();
-        $relatedPosts = Post::published()
+        $post = Blog::where('slug', $slug)->firstOrFail();
+        $relatedPosts = Blog::whereNotNull('slug')
             ->where('id', '!=', $post->id)
             ->latest()
             ->take(3)
             ->get();
 
-        // Prefer the SEO description set in Voyager, falling back to the excerpt, then the body.
+        // Prefer the SEO description set in Voyager, falling back to the body.
         $metaDescription = Str::limit(
-            trim(preg_replace('/\s+/', ' ', strip_tags($post->meta_description ?: $post->excerpt ?: $post->body))),
+            trim(preg_replace('/\s+/', ' ', strip_tags($post->meta_description ?: $post->body))),
             160
         );
 
@@ -79,8 +78,8 @@ class HomeController extends Controller
                 ],
             ],
         ];
-        if ($post->image) {
-            $schema['image'] = asset('storage/' . $post->image);
+        if ($post->thumbnail) {
+            $schema['image'] = asset('storage/' . $post->thumbnail);
         }
         $postSchema = json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 

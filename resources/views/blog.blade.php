@@ -26,14 +26,14 @@
       <div class="col-xl-4 col-md-6 mb-5" data-aos="zoom-in" data-aos-delay="200">
         <div class="service-item">
           <div class="img">
-            <img src="{{ $post->image ? asset('storage/' . $post->image) : asset('storage/img/hero-bg.jpg') }}" class="img-fluid" alt="{{ $post->title }}">
+            <img src="{{ $post->thumbnail ? asset('storage/' . $post->thumbnail) : asset('storage/img/hero-bg.jpg') }}" class="img-fluid" alt="{{ $post->title }}">
           </div>
           <div class="details position-relative">
             <div class="icon">
               <i class="bi bi-file-earmark-text"></i>
             </div>
             <a href="{{ route('blog.show', $post->slug) }}"><h3>{{ $post->title }}</h3></a>
-            <p class="mb-3">{{ Illuminate\Support\Str::limit(strip_tags($post->excerpt), 140) }}</p>
+            <p class="mb-3">{{ Illuminate\Support\Str::limit(strip_tags($post->body), 140) }}</p>
             <p class="fst-italic" style="font-size:13px;">{{ $post->created_at->format('M d, Y') }}</p>
             <a href="{{ route('blog.show', $post->slug) }}" class="order mt-3 text-white">Read More</a>
           </div>

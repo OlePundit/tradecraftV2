@@ -1,9 +1,8 @@
 @extends('layouts.app')
 
-@section('title', ($post->seo_title ?: $post->title) . ' | Tradecraft Printers Blog')
+@section('title', $post->title . ' | Tradecraft Printers Blog')
 @section('meta_description', $metaDescription)
-@section('meta_keywords', $post->meta_keywords)
-@section('meta_image', $post->image ? asset('storage/' . $post->image) : 'https://tradecraft.co.ke/assets/img/twitter-card.png')
+@section('meta_image', $post->thumbnail ? asset('storage/' . $post->thumbnail) : 'https://tradecraft.co.ke/assets/img/twitter-card.png')
 @section('og_type', 'article')
 @section('canonical', route('blog.show', $post->slug))
 @section('extra_meta')
@@ -28,8 +27,8 @@
   <div class="container" data-aos="fade-up">
     <div class="row justify-content-center">
       <div class="col-lg-9 content">
-        @if($post->image)
-        <img src="{{ asset('storage/' . $post->image) }}" class="img-fluid rounded mb-4" alt="{{ $post->title }}">
+        @if($post->thumbnail)
+        <img src="{{ asset('storage/' . $post->thumbnail) }}" class="img-fluid rounded mb-4" alt="{{ $post->title }}">
         @endif
         <p class="fst-italic">Published {{ $post->created_at->format('F d, Y') }}</p>
         <div class="post-body">
@@ -53,14 +52,14 @@
       <div class="col-xl-4 col-md-6 mb-5" data-aos="zoom-in" data-aos-delay="200">
         <div class="service-item">
           <div class="img">
-            <img src="{{ $related->image ? asset('storage/' . $related->image) : asset('storage/img/hero-bg.jpg') }}" class="img-fluid" alt="{{ $related->title }}">
+            <img src="{{ $related->thumbnail ? asset('storage/' . $related->thumbnail) : asset('storage/img/hero-bg.jpg') }}" class="img-fluid" alt="{{ $related->title }}">
           </div>
           <div class="details position-relative">
             <div class="icon">
               <i class="bi bi-file-earmark-text"></i>
             </div>
             <a href="{{ route('blog.show', $related->slug) }}"><h3>{{ $related->title }}</h3></a>
-            <p class="mb-3">{{ Illuminate\Support\Str::limit(strip_tags($related->excerpt), 100) }}</p>
+            <p class="mb-3">{{ Illuminate\Support\Str::limit(strip_tags($related->body), 100) }}</p>
             <a href="{{ route('blog.show', $related->slug) }}" class="order mt-3 text-white">Read More</a>
           </div>
         </div>
