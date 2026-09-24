@@ -5,20 +5,28 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
+    @php
+        // Blogs use their own meta description (falling back to the body); services keep the site default.
+        $metaDescription = $slug->meta_description
+            ?: ($slug instanceof \App\Models\Blog
+                ? \Illuminate\Support\Str::limit(trim(preg_replace('/\s+/', ' ', strip_tags($slug->body))), 160)
+                : null)
+            ?: 'Tradecraft Printers provides professional printing, photocopying, scanning, binding, lamination and digital printing in Nairobi CBD. Fast turnaround and delivery across Kenya.';
+    @endphp
     <title>{{$slug->title}}</title>
-    <meta content="#1 printing, photocopying, binding and lamination shop in Kenya" name="description">
+    <meta content="{{ $metaDescription }}" name="description">
     <meta content="" name="keywords">
 
     <!-- Open Graph / Twitter Card -->
     <meta name="twitter:title" content="{{$slug->title}}">
-    <meta name="twitter:description" content="#1 printing, photocopying, binding and lamination shop in Kenya">
+    <meta name="twitter:description" content="{{ $metaDescription }}">
     <meta name="twitter:image" content="https://tradecraft.co.ke/storage/{{$slug->thumbnail}}">
     <meta name="twitter:site" content="tradecraft.co.ke">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:creator" content="@tradecraft2017">
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{$slug->title}}"/>
-    <meta property="og:description" content="#1 printing, photocopying, binding and lamination shop in Kenya" />
+    <meta property="og:description" content="{{ $metaDescription }}" />
     <meta property="og:image" content="https://tradecraft.co.ke/storage/{{$slug->thumbnail}}" />
     <meta property="og:url" content="https://tradecraft.co.ke" />
     <meta property="og:site_name" content="{{$slug->title}}"/>
@@ -47,7 +55,7 @@
     <!-- App CSS -->
     <link rel="stylesheet" href="{{ asset('build/assets/app-DHBATib1.css') }}">
     <link rel="stylesheet" href="{{ asset('build/assets/remixicon-bMSTyo6R.css') }}">
-    <link rel="stylesheet" href="{{ asset('build/assets/style-CrzLyF-k.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/assets/style-fkTnHZOg.css') }}">
     <link rel="stylesheet" href="{{ asset('build/assets/variables-DBBMD_mi.css') }}">
 
     <!-- Structured Data -->
@@ -87,20 +95,14 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="/">Home</a></li>
-          <li><a class="nav-link scrollto" href="/#about">About</a></li>
+          <li><a class="nav-link" href="{{ route('about') }}">About</a></li>
+          <li><a class="nav-link" href="{{ route('blog') }}">Blog</a></li>
           <li><a class="nav-link scrollto " href="/#portfolio">Portfolio</a></li>
           <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
                 @foreach($services as $service)
                 <li><a href="{{ route('service', $service->slug) }}">{{ $service->service_type }}</a></li>
                 @endforeach
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#services"><span>Categories</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              @foreach($categories as $category)
-              <li><a href="{{ route('category', $category->slug) }}">{{ $category->category_type }}</a></li>
-              @endforeach
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="/#contact">Contact</a></li>
@@ -162,7 +164,8 @@
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="/#hero">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{ route('about') }}">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{ route('blog') }}">Blog</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="/#services">Services</a></li>
             </ul>
           </div>

@@ -40,7 +40,7 @@
                 <i class="bi bi-printer"></i>
                 </div>
                 <a href="printing.html"><h3>Digital Printing</h3></a>
-                <p class="mb-3">Bulk and lightning fast printing printing, more than 300 copies per minute using the latest state of the art Konica Minolta machines.</p>
+                <p class="mb-3">Bulk and lightning fast printing, more than 300 copies per minute using the latest state of the art Konica Minolta machines.</p>
                 <a href="#" data-toggle="modal" data-target="#exampleModal" class="order mt-3 text-white">Order</a>
             </div>
             </div>
@@ -295,7 +295,7 @@
     </section>
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section id="about" class="about" style="background-image: url('{{ asset('storage/img/counts-img.jpg') }}'); background-size: cover; background-position: center;">
     <div class="container" data-aos="fade-up">
 
         <div class="row">
@@ -305,11 +305,12 @@
             We have a dedicated team with in house equipment, no outsourcing and 95% of services done by us
             </p>
             <ul>
-            <li class=""><i class="ri-check-double-line"></i> High quality state of the art printing</li>
-            <li class=""><i class="ri-check-double-line"></i>Highly trained team with excellent workmanship</li>
-            <li class=""><i class="ri-check-double-line"></i> Flexible working hours, including 24 hr service for jobs with tight deadlines</li>
-            <li class=""><i class="ri-check-double-line"></i> 2 office stations to handle emergencies and bulk jobs</li>
-            <li class=""><i class="ri-check-double-line"></i> Tailor made services such as contractual agreements to render our services in house for sensitive matters/ documents</li>
+                <li class=""><i class="ri-check-double-line"></i> Fast Bulk Printing & Document Production in Nairobi</li>
+                <li class=""><i class="ri-check-double-line"></i> High quality state of the art printing</li>
+                <li class=""><i class="ri-check-double-line"></i>Highly trained team with excellent workmanship</li>
+                <li class=""><i class="ri-check-double-line"></i> Flexible working hours, including 24 hr service for jobs with tight deadlines</li>
+                <li class=""><i class="ri-check-double-line"></i> 2 office stations to handle emergencies and bulk jobs</li>
+                <li class=""><i class="ri-check-double-line"></i> Tailor made services such as contractual agreements to render our services in house for sensitive matters/ documents</li>
             </ul>
             <p class="">
             Hard cover binding, printing services, photocopying, lamination, you name it! We offer state of the art, round the clock, high quality printing services

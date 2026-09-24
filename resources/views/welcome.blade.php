@@ -5,7 +5,7 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
       
         <title>Tradecraft Printers</title>
-        <meta content="#1 printing, photocopying, binding and lamination shop in Kenya" name="description">
+        <meta content="Tradecraft Printers provides professional printing, photocopying, scanning, binding, lamination and digital printing in Nairobi CBD. Fast turnaround and delivery across Kenya." name="description">
         <meta content="" name="keywords">
       
         <!-- Favicons -->
@@ -24,14 +24,14 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
       
         <meta name="twitter:title" content="Tradecraft Printers">
-        <meta name="twitter:description" content="<p>#1 printing, photocopying, binding and lamination shop in Kenya</p>">
+        <meta name="twitter:description" content="<p>Tradecraft Printers provides professional printing, photocopying, scanning, binding, lamination and digital printing in Nairobi CBD. Fast turnaround and delivery across Kenya.</p>">
         <meta name="twitter:image" content="https://tradecraft.co.ke/assets/img/twitter-card.png">
         <meta name="twitter:site" content="tradecraft.co.ke">
         <meta name="twitter:card" content="summary_large_image">    
         <meta name="twitter:creator" content="@tradecraft2017">
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Tradecraft Printers"/>
-        <meta property="og:description" content="<p>#1 printing, photocopying, binding and lamination shop in Kenya</p>" />
+        <meta property="og:description" content="<p>Tradecraft Printers provides professional printing, photocopying, scanning, binding, lamination and digital printing in Nairobi CBD. Fast turnaround and delivery across Kenya.</p>" />
         <meta property="og:image" content="https://tradecraft.co.ke/assets/img/twitter-card.png" />
         <meta property="og:url" content="https://tradecraft.co.ke" />
         <meta property="og:site_name" content="Tradecraft Printers"/>
@@ -41,7 +41,7 @@
 
     <link rel="stylesheet" href="{{ asset('build/assets/app-DHBATib1.css') }}">
     <link rel="stylesheet" href="{{ asset('build/assets/remixicon-bMSTyo6R.css') }}">
-    <link rel="stylesheet" href="{{ asset('build/assets/style-CrzLyF-k.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/assets/style-fkTnHZOg.css') }}">
 
     <link rel="stylesheet" href="{{ asset('build/assets/variables-DBBMD_mi.css') }}">
     <script src="{{ asset('bui1ld/assets/app-7q1JrtwP.js') }}"></script>
@@ -100,7 +100,7 @@
             <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
               <div class="col-xl-6 col-lg-8">
                 <h1>Tradecraft Printers<span>.</span></h1>
-                <h2>#1 printing <i class="bx bx-file"></i>, photocopying <i class='bx bx-copy-alt'></i>, binding <i class='bx bx-book'></i> and lamination <i class='bx bx-detail' ></i> shop in Kenya</h2>
+                <h2>Printing Services in Nairobi CBD, Kenya</h2>
               </div>
             </div>
       
@@ -972,7 +972,7 @@
           "@context": "http://schema.org",
           "@type": "LocalBusiness",
           "name": "Tradecraft Printers",
-          "description": "#1 printing, photocopying, binding and lamination shop in Kenya",
+          "description": "Printing Services in Nairobi CBD, Kenya",
           "url": "https://tradecraft.co.ke",
           "telephone": "+254 713 445 339",
           "address": {

@@ -18,6 +18,9 @@ use Illuminate\Support\Facades\Redirect;
 Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/about', [App\Http\Controllers\HomeController::class, 'about'])->name('about');
+Route::get('/blog', [App\Http\Controllers\HomeController::class, 'blog'])->name('blog');
+Route::get('/blog/{slug}', [App\Http\Controllers\HomeController::class, 'blogShow'])->name('blog.show');
 Route::get('/services/{slug}', [App\Http\Controllers\HomeController::class, 'service'])->name('service');
 Route::get('/categories/{slug}', [App\Http\Controllers\HomeController::class, 'category'])->name('category');
 

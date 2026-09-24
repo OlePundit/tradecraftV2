@@ -4,22 +4,24 @@
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <title>Tradecraft Printers</title>
-        <meta content="#1 printing, photocopying, binding and lamination shop in Kenya" name="description">
-        <meta content="" name="keywords">
+        <title>@yield('title', 'Tradecraft Printers')</title>
+        <meta content="@yield('meta_description', 'Printing Services in Nairobi CBD, Kenya')" name="description">
+        <meta content="@yield('meta_keywords')" name="keywords">
+        <link rel="canonical" href="@yield('canonical', 'https://tradecraft.co.ke' . request()->getRequestUri())">
 
         <!-- Open Graph / Twitter Card -->
-        <meta name="twitter:title" content="Tradecraft Printers">
-        <meta name="twitter:description" content="#1 printing, photocopying, binding and lamination shop in Kenya">
-        <meta name="twitter:image" content="https://tradecraft.co.ke/assets/img/twitter-card.png">
+        <meta name="twitter:title" content="@yield('title', 'Tradecraft Printers')">
+        <meta name="twitter:description" content="@yield('meta_description', 'Tradecraft Printers provides professional printing, photocopying, scanning, binding, lamination and digital printing in Nairobi CBD. Fast turnaround and delivery across Kenya.')">
+        <meta name="twitter:image" content="@yield('meta_image', 'https://tradecraft.co.ke/assets/img/twitter-card.png')">
         <meta name="twitter:site" content="tradecraft.co.ke">
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:creator" content="@tradecraft2017">
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Tradecraft Printers"/>
-        <meta property="og:description" content="#1 printing, photocopying, binding and lamination shop in Kenya" />
-        <meta property="og:image" content="https://tradecraft.co.ke/assets/img/twitter-card.png" />
-        <meta property="og:url" content="https://tradecraft.co.ke" />
+        <meta property="og:type" content="@yield('og_type', 'website')" />
+        <meta property="og:title" content="@yield('title', 'Tradecraft Printers')"/>
+        <meta property="og:description" content="@yield('meta_description', 'Tradecraft Printers provides professional printing, photocopying, scanning, binding, lamination and digital printing in Nairobi CBD. Fast turnaround and delivery across Kenya.')" />
+        <meta property="og:image" content="@yield('meta_image', 'https://tradecraft.co.ke/assets/img/twitter-card.png')" />
+        <meta property="og:url" content="@yield('canonical', 'https://tradecraft.co.ke' . request()->getRequestUri())" />
+        @yield('extra_meta')
         <meta property="og:site_name" content="Tradecraft Printers"/>
 
         <!-- Favicon -->
@@ -45,11 +47,14 @@
         <!-- App CSS -->
         <link rel="stylesheet" href="{{ asset('build/assets/app-DHBATib1.css') }}">
         <link rel="stylesheet" href="{{ asset('build/assets/remixicon-bMSTyo6R.css') }}">
-        <link rel="stylesheet" href="{{ asset('build/assets/style-CrzLyF-k.css') }}">
+        <link rel="stylesheet" href="{{ asset('build/assets/style-fkTnHZOg.css') }}">
         <link rel="stylesheet" href="{{ asset('build/assets/variables-DBBMD_mi.css') }}">
 
         <!-- Structured Data -->
         <script type="application/ld+json">
+        @hasSection('schema')
+          @yield('schema')
+        @else
           {
             "@context": "http://schema.org",
             "@type": "LocalBusiness",
@@ -57,6 +62,11 @@
             "description": "Leading printing, photocopying, binding, lamination, scanning, and graphic design services in Nairobi, Kenya. Fast, reliable, and affordable with state-of-the-art machines.",
             "url": "https://tradecraft.co.ke",
             "telephone": "+254 713 445 339",
+            "foundingDate": "2017",
+            "founder": {
+                "@type": "Person",
+                "name": "Francis Gaitho"
+            },
             "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Mfangano Trade Centre",
@@ -143,6 +153,7 @@
               ]
             }
           }
+        @endif
         </script>
     </head>
     <body>
@@ -156,19 +167,13 @@
             <nav id="navbar" class="navbar .navbar-mobile order-last order-lg-0">
               <ul>
                 <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                <li><a class="nav-link scrollto" href="#about">About</a></li>
+                <li><a class="nav-link" href="{{ route('about') }}">About</a></li>
+                <li><a class="nav-link" href="{{ route('blog') }}">Blog</a></li>
                 <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
                 <li class="dropdown"><a href="#services"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
                   <ul>
                     @foreach($services as $service)
                     <li><a href="{{ route('service', $service->slug) }}">{{ $service->service_type }}</a></li>
-                    @endforeach
-                  </ul>
-                </li>
-                <li class="dropdown"><a href="#services"><span>Categories</span> <i class="bi bi-chevron-down"></i></a>
-                  <ul>
-                    @foreach($categories as $category)
-                    <li><a href="{{ route('category', $category->slug) }}">{{ $category->category_type }}</a></li>
                     @endforeach
                   </ul>
                 </li>
@@ -192,8 +197,8 @@
 
             <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
               <div class="col-xl-6 col-lg-8">
-                <h1>Tradecraft Printers<span>.</span></h1>
-                <h2>#1 printing <i class="bx bx-file"></i>, photocopying <i class='bx bx-copy-alt'></i>, binding <i class='bx bx-book'></i> and lamination <i class='bx bx-detail' ></i> shop in Kenya</h2>
+                <h1>@yield('hero_title', 'Tradecraft Printers')<span>.</span></h1>
+                <h2>@yield('hero_subtitle', 'Printing Services in Nairobi CBD, Kenya')</h2>
               </div>
             </div>
 
@@ -282,7 +287,8 @@
                     <h4>Useful Links</h4>
                     <ul>
                         <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{ route('about') }}">About us</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{ route('blog') }}">Blog</a></li>
                         <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
                     </ul>
                     </div>

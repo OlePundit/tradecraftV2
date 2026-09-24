@@ -690,8 +690,24 @@ section {
 # About
 --------------------------------------------------------------*/
 #about{
-  background:rgba(216, 19,119, 0.5);
+  position: relative;
+  background-color: #fbeef1;
   background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+#about::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 246, 249, 0.94), rgba(250, 226, 236, 0.9));
+}
+#about .container{
+  position: relative;
+  z-index: 1;
 }
 .about .content h3 {
   font-weight: 700;
@@ -802,7 +818,7 @@ section {
 # Services Section
 --------------------------------------------------------------*/
 #services{
-  background:rgba(36, 146, 209,0.5);
+  background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
   background-size: cover;
 }
 .services .img {
@@ -1058,7 +1074,7 @@ section {
 # Portfolio
 --------------------------------------------------------------*/
 #portfolio{
-  background:rgba(149,149,149, 0.5);
+  background: linear-gradient(135deg, var(--color-secondary-dark), var(--color-default));
   background-size: cover;
 }
 .portfolio .portfolio-item {
