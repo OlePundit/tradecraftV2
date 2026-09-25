@@ -28,12 +28,12 @@
                 <img
                 sizes="(max-width: 896px) 100vw, 896px"
                 srcset="
-                storage/img/services-8_wrnzw5_c_scale,w_200.webp 200w,
-                storage/img/services-8_wrnzw5_c_scale,w_488.webp 488w,
-                storage/img/services-8_wrnzw5_c_scale,w_649.webp 649w,
-                storage/img/services-8_wrnzw5_c_scale,w_896.webp 896w,"
-                src="storage/img/services-8_wrnzw5_c_scale,w_896.webp"
-                class="img-fluid" alt="service-img">
+                storage/img/tradecraft_digital_printing.webp 200w,
+                storage/img/tradecraft_digital_printing1.webp 488w,
+                storage/img/tradecraft_digital_printing2.webp 649w,
+                storage/img/tradecraft_digital_printing3.webp 896w,"
+                src="storage/img/tradecraft_digital_printing3.webp"
+                class="img-fluid" alt="printed flyers">
             </div>
             <div class="details position-relative">
                 <div class="icon">
@@ -51,7 +51,7 @@
         <div class="col-xl-4 col-md-6 mb-5" data-aos="zoom-in" data-aos-delay="300">
             <div class="service-item">
             <div class="img">
-                <img src="storage/img/services-2.webp" class="img-fluid" alt="service-img">
+                <img src="storage/img/tradecraft_photocopying_nairobi.webp" class="img-fluid" alt="service-img">
             </div>
             <div class="details position-relative">
                 <div class="icon">
@@ -73,10 +73,10 @@
                 <img
                 sizes="(max-width: 800px) 100vw, 800px"
                 srcset="
-                storage/img/services-7_iwmsqj_c_scale,w_200.webp 200w,
-                storage/img/services-7_iwmsqj_c_scale,w_800.webp 800w"
-                src="storage/img/services-7_iwmsqj_c_scale,w_800.webp"
-                 class="img-fluid" alt="service-img">
+                storage/img/tradecraft_scanning_nairobi.webp 200w,
+                storage/img/tradecraft_scanning_nairobi1.webp 800w"
+                src="storage/img/tradecraft_scanning_nairobi1.webp"
+                 class="img-fluid" alt="scanner">
             </div>
             <div class="details position-relative">
                 <div class="icon">
@@ -93,7 +93,7 @@
         <div class="col-xl-4 col-md-6 mb-5" data-aos="zoom-in" data-aos-delay="400">
             <div class="service-item">
             <div class="img">
-                <img src="storage/img/services-3.webp" class="img-fluid" alt="service-img">
+                <img src="storage/img/tradecraft_lamination.webp" class="img-fluid" alt="tradecraft offices">
             </div>
             <div class="details position-relative">
                 <div class="icon">
@@ -113,12 +113,12 @@
                 <img
                     sizes="(max-width: 913px) 100vw, 913px"
                     srcset="
-                    storage/img/services-4_ux4p6w_c_scale,w_200.webp 200w,
-                    storage/img/services-4_ux4p6w_c_scale,w_502.webp 502w,
-                    storage/img/services-4_ux4p6w_c_scale,w_703.webp 703w,
-                    storage/img/services-4_ux4p6w_c_scale,w_913.webp 913w,"
-                    src="storage/img/services-4_ux4p6w_c_scale,w_913.webp"
-                     class="img-fluid" alt="service-img">
+                    storage/img/tradecraft_thesis_binding_nairobi.webp 200w,
+                    storage/img/tradecraft_thesis_binding_nairobi1.webp 502w,
+                    storage/img/tradecraft_thesis_binding_nairobi2.webp 703w,
+                    storage/img/tradecraft_thesis_binding_nairobi3.webp 913w,"
+                    src="storage/img/tradecraft_thesis_binding_nairobi3.webp"
+                     class="img-fluid" alt="a thesis">
             </div>
             <div class="details position-relative">
                 <div class="icon">
@@ -137,11 +137,11 @@
                 <img
                 sizes="(max-width: 800px) 100vw, 800px"
                 srcset="
-                storage/img/services-5_n0cemg_c_scale,w_200.webp 200w,
-                storage/img/services-5_n0cemg_c_scale,w_636.webp 636w,
-                storage/img/services-5_n0cemg_c_scale,w_800.webp 800w"
-                src="storage/img/services-5_n0cemg_c_scale,w_800.webp"
-                class="img-fluid" alt="service-img">
+                storage/img/tradecraft_graphic_design_nairobi.webp 200w,
+                storage/img/tradecraft_graphic_design_nairobi1.webp 636w,
+                storage/img/tradecraft_graphic_design_nairobi2.webp 800w"
+                src="storage/img/tradecraft_graphic_design_nairobi2.webp"
+                class="img-fluid" alt="graphic designer at work">
             </div>
             <div class="details position-relative">
                 <div class="icon">
@@ -159,10 +159,10 @@
                 <img
                 sizes="(max-width: 800px) 100vw, 800px"
                 srcset="
-                storage/img/services-1_vrh8dp_c_scale,w_200.webp 200w,
-                storage/img/services-1_vrh8dp_c_scale,w_673.webp 673w,
-                storage/img/services-1_vrh8dp_c_scale,w_800.webp 800w"
-                src="storage/img/services-1_vrh8dp_c_scale,w_800.webp"
+                storage/img/tradecraft_printing_nairobi.webp 200w,
+                storage/img/tradecraft_printing_nairobi1.webp 673w,
+                storage/img/tradecraft_printing_nairobi2.webp 800w"
+                src="storage/img/tradecraft_printing_nairobi2.webp"
                 class="img-fluid" alt="service-img">
             </div>
             <div class="details position-relative">
@@ -182,11 +182,11 @@
                 <img
                 sizes="(max-width: 800px) 100vw, 800px"
                 srcset="
-                storage/img/services-6_gq8ami_c_scale,w_200.webp 200w,
-                storage/img/services-6_gq8ami_c_scale,w_540.webp 540w,
-                storage/img/services-6_gq8ami_c_scale,w_800.webp 800w"
-                src="storage/img/services-6_gq8ami_c_scale,w_800.webp"
-                class="img-fluid" alt="service-img">
+                storage/img/tradecraft_branding_nairobi.webp 200w,
+                storage/img/tradecraft_branding_nairobi1.webp 540w,
+                storage/img/tradecraft_branding_nairobi2.webp 800w"
+                src="storage/img/tradecraft_branding_nairobi2.webp"
+                class="img-fluid" alt="branded shop">
             </div>
             <div class="details position-relative">
                 <div class="icon">
@@ -295,7 +295,7 @@
     </section>
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about" style="background-image: url('{{ asset('storage/img/counts-img.jpg') }}'); background-size: cover; background-position: center;">
+    <section id="about" class="about" style="background-image: url('{{ asset('storage/img/trade_craft_offices_nairobi.jpg') }}'); background-size: cover; background-position: center;">
     <div class="container" data-aos="fade-up">
 
         <div class="row">
@@ -460,7 +460,7 @@
     <div class="container" data-aos="fade-up">
 
         <div class="row no-gutters">
-        <div class="image col-xl-4 p-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" style="background-image: url('{{ asset('storage/img/counts-img.jpg') }}'); background-size: cover; background-position: center;" data-aos="fade-right" data-aos-delay="100"></div>
+        <div class="image col-xl-4 p-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" style="background-image: url('{{ asset('storage/img/trade_craft_offices_nairobi.jpg') }}'); background-size: cover; background-position: center;" data-aos="fade-right" data-aos-delay="100"></div>
         <div class="col-xl-7 ml-5 ps-4 ps-lg-5 pe-4 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
             <div class="content d-flex flex-column justify-content-center">
             <h3>Our numbers speak for themsleves!</h3>

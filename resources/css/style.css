@@ -205,7 +205,12 @@ h6 {
   width:90%
 
 }
+/* Fixed full-width bar: let clicks pass through to the page except on the buttons */
+.whatsapp-bottom{
+  pointer-events: none;
+}
 .whatsapp-bottom ul{
+  pointer-events: auto;
   list-style: none;
   padding: 10px 25px;
   border-radius:16px;
@@ -1323,7 +1328,7 @@ section {
 }
 
 .counts .image {
-  background: url("../img/counts-img.jpg") center center no-repeat;
+  background: url("../img/trade_craft_offices_nairobi.jpg") center center no-repeat;
   background-size: cover;
   min-height: 400px;
 }

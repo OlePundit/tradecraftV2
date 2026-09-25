@@ -308,7 +308,7 @@
 
             <div class="container">
                 <div class="copyright">
-                &copy; Copyright <strong><span>Gp</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>Tradecraft</span></strong>. All Rights Reserved
                 </div>
                 <div class="credits">
                 Designed by <a href="https://sansa.digital/">Sansa Digital</a>

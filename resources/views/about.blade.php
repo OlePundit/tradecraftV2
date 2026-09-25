@@ -87,7 +87,7 @@
 <section id="counts" class="counts">
   <div class="container" data-aos="fade-up">
     <div class="row no-gutters">
-      <div class="image col-xl-4 p-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" style="background-image: url('{{ asset('storage/img/counts-img.jpg') }}'); background-size: cover; background-position: center;" data-aos="fade-right" data-aos-delay="100"></div>
+      <div class="image col-xl-4 p-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" style="background-image: url('{{ asset('storage/img/trade_craft_offices_nairobi.jpg') }}'); background-size: cover; background-position: center;" data-aos="fade-right" data-aos-delay="100"></div>
       <div class="col-xl-7 ml-5 ps-4 ps-lg-5 pe-4 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
         <div class="content d-flex flex-column justify-content-center">
           <h3>Tradecraft Printers by the numbers</h3>
@@ -256,7 +256,7 @@
   <div class="container" data-aos="fade-up">
     <div class="row justify-content-center">
       <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
-        <div class="image" style="background-image: url('{{ asset('storage/img/counts-img.jpg') }}'); background-size: cover; background-position: center; min-height: 280px; border-radius: 8px;"></div>
+        <div class="image" style="background-image: url('{{ asset('storage/img/trade_craft_offices_nairobi.jpg') }}'); background-size: cover; background-position: center; min-height: 280px; border-radius: 8px;"></div>
       </div>
       <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
         <h3>Our Team</h3>
