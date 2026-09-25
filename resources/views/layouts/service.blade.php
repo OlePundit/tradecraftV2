@@ -2,16 +2,23 @@
 <html lang="en">
 
 <head>
+      <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JWLD64VZSN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JWLD64VZSN');
+    </script>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     @php
-        // Blogs use their own meta description (falling back to the body); services keep the site default.
+        // Blogs and services use their own meta description, falling back to the body, then the site default.
         $metaDescription = $slug->meta_description
-            ?: ($slug instanceof \App\Models\Blog
-                ? \Illuminate\Support\Str::limit(trim(preg_replace('/\s+/', ' ', strip_tags($slug->body))), 160)
-                : null)
-            ?: 'Tradecraft Printers provides professional printing, photocopying, scanning, binding, lamination and digital printing in Nairobi CBD. Fast turnaround and delivery across Kenya.';
+            ?: \Illuminate\Support\Str::limit(trim(preg_replace('/\s+/', ' ', strip_tags($slug->body ?? ''))), 160)
+            ?:'Tradecraft Printers provides professional printing, photocopying, scanning, binding, lamination and digital printing in Nairobi CBD. Fast turnaround and delivery across Kenya.';
     @endphp
     <title>{{$slug->title}}</title>
     <meta content="{{ $metaDescription }}" name="description">
