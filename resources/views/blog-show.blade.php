@@ -10,6 +10,7 @@
         <meta property="article:modified_time" content="{{ $post->updated_at->toAtomString() }}" />
 @endsection
 @section('hero_title', $post->title)
+@section('hide_hero_dot', true)
 @section('hero_subtitle', 'Tradecraft Blog')
 
 @section('schema')

@@ -49,8 +49,8 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
         <!-- Vendor CSS -->
-        <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-        <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+        <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
         <!-- App CSS -->
@@ -171,7 +171,7 @@
         <header id="header" class="fixed-top ">
           <div class="container d-flex align-items-center justify-content-lg-between">
 
-            <a href="/" class="logo me-auto me-lg-0"><img src="storage/img/logo.webp" alt="logo" class="img-fluid"></a>
+            <a href="/" class="logo me-auto me-lg-0"><img src="/storage/img/logo.webp" alt="logo" class="img-fluid"></a>
 
             <nav id="navbar" class="navbar .navbar-mobile order-last order-lg-0">
               <ul>
@@ -206,7 +206,7 @@
 
             <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
               <div class="col-xl-6 col-lg-8">
-                <h1>@yield('hero_title', 'Tradecraft Printers')<span>.</span></h1>
+                <h1>@yield('hero_title', 'Tradecraft Printers')@unless(View::hasSection('hide_hero_dot'))<span>.</span>@endunless</h1>
                 <h2>@yield('hero_subtitle', 'Printing Services in Nairobi CBD, Kenya')</h2>
               </div>
             </div>
@@ -276,7 +276,7 @@
 
                     <div class="col-lg-3 col-md-6">
                     <div class="footer-info">
-                        <a href="index.html" class="logo me-auto me-lg-0"><img src="storage/img/logo.png" alt="logo" class="img-fluid"></a>
+                        <a href="/" class="logo me-auto me-lg-0"><img src="/storage/img/logo.png" alt="logo" class="img-fluid"></a>
 
                         <p>
                         Mfangano Trade Centre <br>
@@ -335,14 +335,14 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
         <!-- Vendor JS -->
-        <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-        <script src="assets/vendor/aos/aos.js"></script>
-        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+        <script src="/assets/vendor/aos/aos.js"></script>
+        <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
         <!-- Template Main JS -->
-        <script src="assets/js/main.js"></script>
+        <script src="/assets/js/main.js"></script>
 
         <!-- App JS -->
         <script src="{{ asset('build/assets/app-7q1JrtwP.js') }}"></script>
